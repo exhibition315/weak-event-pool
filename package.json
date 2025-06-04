@@ -1,0 +1,50 @@
+{
+  "name": "weak-event-pool",
+  "version": "0.0.1",
+  "description": "A weak event pool provide GC automatically",
+  "main": "dist/EventPool.cjs",
+  "module": "dist/EventPool.mjs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/EventPool.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "example": "node --expose-gc --loader ts-node/esm ./example/usage.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exhibition315/weak-event-pool.git"
+  },
+  "keywords": [
+    "event",
+    "pool",
+    "weak",
+    "gc",
+    "garbage collection",
+    "event pool"
+  ],
+  "author": "exhibition315",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/exhibition315/weak-event-pool/issues"
+  },
+  "homepage": "https://github.com/exhibition315/weak-event-pool#readme",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
