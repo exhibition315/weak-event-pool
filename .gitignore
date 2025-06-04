@@ -1,8 +1,11 @@
-node_modules
-dist
-*.log
-*.tsbuildinfo
-.DS_Store
-.env
-coverage
-.vscode
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+
+# Test coverage
+coverage/
+
+# npm pack files
+*.tgz

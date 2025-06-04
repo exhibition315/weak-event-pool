@@ -7,7 +7,9 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/EventPool.d.ts"
+      "types": "./dist/EventPool.d.ts",
+      "import": "./dist/EventPool.mjs",
+      "require": "./dist/EventPool.cjs"
     }
   },
   "files": [
